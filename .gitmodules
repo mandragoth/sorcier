@@ -1,0 +1,6 @@
+[submodule "magia"]
+	path = magia
+	url = https://github.com/mandragoth/magia
+[submodule "grimoire"]
+	path = grimoire
+	url = https://github.com/mandragoth/grimoire

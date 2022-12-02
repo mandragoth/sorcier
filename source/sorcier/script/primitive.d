@@ -5,6 +5,8 @@ import magia, grimoire;
 import sorcier.script.util;
 
 void loadMagiaLibPrimitive(GrLibrary library) {
+    rectFactory = new RectFactory();
+
     GrType colorType = grGetClassType("Color");
     library.addFunction(&_rectangle1, "rectangle", [
             grFloat, grFloat, grFloat, grFloat
@@ -18,8 +20,10 @@ void loadMagiaLibPrimitive(GrLibrary library) {
 }
 
 private void _rectangle1(GrCall call) {
-    drawFilledRect(Vec2f(call.getFloat(0), call.getFloat(1)),
-        Vec2f(call.getFloat(2), call.getFloat(3)));
+    /*rectFactory.drawFilledRect(Vec2f(call.getFloat(0), call.getFloat(1)),
+                               Vec2f(call.getFloat(2), call.getFloat(3)));*/
+    /*drawFilledRect(Vec2f(call.getFloat(0), call.getFloat(1)),
+        Vec2f(call.getFloat(2), call.getFloat(3)));*/
 }
 
 private void _rectangle2(GrCall call) {

@@ -33,7 +33,7 @@ void main() {
 
 /// Lance l’application
 void runApplication() {
-    createWindow(Vec2u(800, 800), "Magia - Runtime");
+    createWindow(Vec2u(800, 600), "Magia - Runtime");
     initializeEvents();
     _tickStartFrame = Clock.currStdTime();
 
@@ -100,6 +100,10 @@ void runApplication() {
         rectPrototype.drawFilledRect(Vec2f(200f, 200f),
                                      Vec2f(50f, 20f),
                                      Color.red);
+
+        circlePrototype.drawFilledCircle(Vec2f(400f, 300f),
+                                         50f,
+                                         Color.green);
 
         renderWindow();
 

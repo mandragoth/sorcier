@@ -6,6 +6,7 @@ import sorcier.script.util;
 
 void loadMagiaLibPrimitive(GrLibrary library) {
     rectPrototype = new RectPrototype();
+    circlePrototype = new CirclePrototype();
 
     GrType colorType = grGetClassType("Color");
     library.addFunction(&_rectangle1, "rectangle", [

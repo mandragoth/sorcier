@@ -97,11 +97,9 @@ void runApplication() {
         setup2DRender();
         drawUI();
 
-        drawFilledRect(Vec2f(200f, 200f),
-                       Vec2f(50f, 20f));
-
-        rectFactory.drawFilledRect(Vec2f(200f, 200f),
-                                   Vec2f(50f, 20f));
+        rectPrototype.drawFilledRect(Vec2f(200f, 200f),
+                                     Vec2f(50f, 20f),
+                                     Color.red);
 
         renderWindow();
 
